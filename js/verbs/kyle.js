@@ -1,7 +1,7 @@
 verbs = verbs.concat([
     'run',
     'jump',
-    'code'
-    'confuse'
+    'code',
+    'confuse',
     'walk'
 ]);
