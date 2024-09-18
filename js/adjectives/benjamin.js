@@ -1,9 +1,9 @@
 adjectives = adjectives.concat([
     'hairy',
     'smelly',
-    'moist'
-    'joyful'
-    'cheerful'
-    'excited'
+    'moist',
+    'joyful',
+    'cheerful',
+    'excited',
     'happy'
 ]);
