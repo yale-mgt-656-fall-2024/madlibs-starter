@@ -18,6 +18,7 @@ let nouns = [];
 let adjectives = [];
 let adverbs = [];
 let verbs = [];
+let student_names = [];
 
 let hadError = false;
 
@@ -32,6 +33,8 @@ function getArrayLength(category) {
             return adverbs.length;
         case 'verbs':
             return verbs.length;
+        case 'student_names':
+            return student_names.length;
         default:
             throw new Error(`Invalid category: ${category}`);
     }
@@ -60,11 +63,11 @@ function loadWordFiles(category) {
     }
 }
 
-['nouns', 'adjectives', 'adverbs', 'verbs'].forEach(loadWordFiles);
+['nouns', 'adjectives', 'adverbs', 'verbs', 'student_names'].forEach(loadWordFiles);
 
 // Test functions
 function testArrays() {
-    const arrays = { nouns, adjectives, adverbs, verbs };
+    const arrays = { nouns, adjectives, adverbs, verbs, student_names };
     for (const [name, array] of Object.entries(arrays)) {
         if (!Array.isArray(array)) {
             console.error(`❌ ${name} is not an array`);
@@ -105,7 +108,8 @@ function testRenderStory() {
     if (renderedStory.includes('NOUN') ||
         renderedStory.includes('VERB') ||
         renderedStory.includes('ADJECTIVE') ||
-        renderedStory.includes('ADVERB')) {
+        renderedStory.includes('ADVERB') ||
+        renderedStory.includes('STUDENT_NAMES')){
         console.error('❌ renderStory did not replace all placeholders');
     } else {
         console.log('✅ renderStory replaced all placeholders');
