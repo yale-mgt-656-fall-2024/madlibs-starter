@@ -1,0 +1,19 @@
+adjectives = adjectives.concat([
+    'jubilant',
+    'scrumptious',
+    'smart',
+    'clever',
+    'sneaky',
+    'quirky',
+    'goofy',
+    'whimsical',
+    'bizarre',
+    'silly',
+    'fluffy',
+    'dorky',
+    'gigglish',
+    'wobbly',
+    'sassy',
+    'zesty',
+    'clumsy'
+]);
